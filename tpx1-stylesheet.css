@@ -1,0 +1,65 @@
+/*
+CSS stylesheet for TPX1
+*/
+
+/* configure universal fonts and box-sizing */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+* {
+	font-family: 'Source Code Pro', monospace;
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* configure general swatch layouts */
+.swatches {
+	display: flex; /* use a flexbox to center the inner <p> tag */
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	transition: background-color 1s; /* add slight transition of background color */
+}
+
+
+/* default font settings for <p> tag; color of hex code text is black */
+.swatches p {
+	font-size: 300%;
+	color: #000;
+	transition: color 1s; /* add slight transition of font color */
+}
+
+
+/* if the background is dark, have JS add the "lite" class to make the text white */
+.swatches p.lite {
+	color: #fff;
+}
+
+
+/* position the first swatch... but can you add another for TPX1??? */
+#colorSwatch1 {
+  display: flex;
+	height: 100vh;
+	width: 50vw;
+	top: 0;
+	left: 0;
+  flex-wrap:wrap;
+}
+
+/* position the second swatch */
+#colorSwatch2 {
+  display: flex;
+	height: 100vh;
+	width: 50vw;
+	top: 0;
+  flex-wrap:wrap;
+}
+
